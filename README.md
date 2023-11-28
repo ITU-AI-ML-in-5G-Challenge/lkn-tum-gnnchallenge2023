@@ -3,10 +3,8 @@
 
 ## Repository structure
 
-- ckpt: folder containing the saved model weights for each epoch of the submitted model
 - data: folder containing the preprocessed datasets for the train and test datasets
 - docker: folder containing the docker-compose file for required Docker environment
-- tensorboard: tensorboard path for the submitted model
 - verification_files: folder containing files used by the predict.py script to verify the generated submissions
 - [models.py](models.py): python module which contain our model
 - [train.py](train.py): python script that can be used to train the baseline projects
@@ -90,11 +88,8 @@ Unfortunately, due to shuffling of the dataset, the reproduced results may not b
 For the final model selection, we chose the model with the lowest validation MAPE.
 
 
-### Answers to Questions
+### Credits
 
-- Programming Language Used: Python
-- ML Programming Framework: Tensorflow
-- Dependencies: Docker version 24.0.2, Docker Compose version v2.23.0
-- Our framework relies purely on the baseline RouteNet implementation.
-- With our setup, one epoch took around 12 minutes.
-- We used 1 Tesla T4 GPU during training.
+Kaan Aykurt, Maximilian Stephan, Serkut Ayvasik, Johannes Zerwas
+
+Chair of Communication Networks, TUM
